@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        حاسبة الزكاة
+    </title>
+    <link rel="shortcut icon" href="zakat.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+   
+    <div class="container">
+        <div class="container_flex">
+            <div class="box">
+                <h2>
+                    حاسبة الزكاة
+                </h2>
+                <p>
+                    الاستفادة من الحاسبة لمعرفة مقدار الزكاة الواجب أخراجها.
+                </p>
+                <form>
+                    <div class="price1">
+                        <div class="way">
+                            <button id="hijri" class="active"> سنة هجرية 2.5% </button>
+                            <button id="miladi"> سنة ميلادية 2.577% </button>
+                        </div>
+                        <label for="money">قيمة المال الذى املكه</label>
+                        <div class="price_inside">
+                            <input type="number" min="0" id="money">
+                            <section>
+                                د.م
+                            </section>
+                        </div>
+                        <button id="count">
+                            احسب
+                        </button>
+                    </div>
+
+                    <div class="box2">
+                        <h2>
+                            إجمالي الزكاة المستحقة
+                        </h2>
+                        <hr>
+                        <div class="mablaqh">
+                            <div class="number_count">
+                                0
+                            </div>
+                            <p>
+                                درهم مغربي
+                            </p>
+                            <div class="adding_money">
+                                <div class="adding_money_inpt">
+                                    <section>
+                                        مبلغ إضافي للزكاة
+                                    </section>
+                                    <input type="number" min="0" placeholder="0">
+                                    <article>
+                                        د.م
+                                    </article>
+                                </div>
+                                <button id="adding">
+                                    إضافة
+                                </button>
+                            </div>
+                        </div>
+                        <div class="after_discount">
+                            
+                        </div>
+                    </div>
+                </form>
+
+                <div class="rest">
+                    <div class="rest_inside">
+                        <h2>باقي المبلغ بعد خصم الزكاة</h2>
+                        <div class="oba">
+                            <h2 id="zero">0</h2> 
+                            <span id="span_oba" style='margin-right: 7px ;font-size: 1.5rem; margin-bottom: 6px;' >د.م</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer class="text-center text-lg-start" style="border-top: 1px solid #ffffff">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: #ffffff; color: rgb(0, 0, 0);">
+            All rights reserved © with <a href="https://www.bakribrahimi.me" target="_blank">Bakr Ibrahimi</a> in 2022
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
